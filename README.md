@@ -15,12 +15,18 @@ Therefore, I thought build you with open source your own action cam! :-)
 Running on the pi direct:
 `cd app`
 
+`pip3 install -r requirements.txt`
+
 `python3 action-recoder.py`
 
 Running as a daemon:
+`pip3 install -r requirements.txt`
+
 `cd system`
 
 `sudo cp action-recorder.service /etc/systemd/system/action-recorder.service`
+
+`systemctl daemon-reload`
 
 `systemctl start action-recorder.service`
 

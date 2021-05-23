@@ -3,7 +3,7 @@ Description=Action Cam Recording Service
 After=syslog.target
 [Service]
 Type=simple
-WorkingDirectory=/home/pi/
+WorkingDirectory=/home/pi/zero-action/app/
 User=pi
 ExecStart=/usr/bin/python3 /home/pi/zero-action/app/action-recorder.py
 Restart=on-abort
