@@ -13,7 +13,7 @@ Stay tuned - still wip!
 
 
 ## Screenshots
-![Uploading Bildschirmfoto 2021-05-23 um 16.31.44.png…]()
+![Bildschirmfoto 2021-05-23 um 16 31 44](https://user-images.githubusercontent.com/4592657/119264762-b21b4000-bbe4-11eb-94a1-d962716af62d.png)
 
 
 
