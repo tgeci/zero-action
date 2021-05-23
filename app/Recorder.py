@@ -32,9 +32,8 @@ class Recorder(object):
         """
         
         journal.write("There are " + str(self.FreeSpace_Mb) + " mb free space in " + self.RecordingPath + " .")
-
-        kb_per_sec = (self.Width * self.Height * self.Bitrate) / (8 * 1024)
-        mb_per_sec = (kb_per_sec / 1024)
+        mb_per_sec = self.Bitrate / 8
+        
         journal.write("1 Second video recording requires " + str(mb_per_sec) + " mb free space.")
         self.Max_Video_Duration = self.FreeSpace_Mb - 1000 / mb_per_sec
         journal.write("Based on your free space and limits we are able to record max " + str(round(self.Max_Video_Duration/60)) + " minutes or " + str(round(self.Max_Video_Duration/3600)) + " hours." )
