@@ -1,3 +1,6 @@
+import os, sys, logging, picamera
+from datetime import datetime
+
 class Recorder(object): 
 
     
@@ -16,28 +19,26 @@ class Recorder(object):
     def getDiskFreeSpace(self):
         """ Determine free space in recording path
         """
-        import os, sys
+
         st = os.statvfs(self.RecordingPath) 
         self.FreeSpace_Mb = (st.f_bavail * st.f_frsize) / 1024
 
     def calculate_possible_length(self):
         """ Return max possible video lenght in seconds based on resolution
         """
-       import logging
-       
-       logging.info("There are " + str(self.FreeSpace_Mb) + " mb free space in " + self.RecordingPath + " .")
+        
+        logging.info("There are " + str(self.FreeSpace_Mb) + " mb free space in " + self.RecordingPath + " .")
 
-       kb_per_sec = (self.Width * self.Height * self.Bitrate) / (8 * 1024)
-       mb_per_sec = (kb_per_sec / 1024)
-       logging.info("1 Second video recording requires " + str(mb_per_sec) + " mb free space.")
-       self.Max_Video_Duration = self.FreeSpace_Mb - 1000 / mb_per_sec
-       logging.info("Based on your free space and limits we are able to record max " + str(round(self.Max_Video_Duration/60)) + " minutes or " + str(round(self.Max_Video_Duration/3600)) + " hours." )
-       return self.Max_Video_Duration 
+        kb_per_sec = (self.Width * self.Height * self.Bitrate) / (8 * 1024)
+        mb_per_sec = (kb_per_sec / 1024)
+        logging.info("1 Second video recording requires " + str(mb_per_sec) + " mb free space.")
+        self.Max_Video_Duration = self.FreeSpace_Mb - 1000 / mb_per_sec
+        logging.info("Based on your free space and limits we are able to record max " + str(round(self.Max_Video_Duration/60)) + " minutes or " + str(round(self.Max_Video_Duration/3600)) + " hours." )
+        return self.Max_Video_Duration 
 
     def start_recording(self):
         """Start recording
         """
-        import logging, datetime
 
         # Set todays date
         today = str(datetime.now().year) + "-" + str(datetime.now().month) + "-" + str(datetime.now().day)
