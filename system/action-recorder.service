@@ -1,0 +1,11 @@
+[Unit]
+Description=Action Cam Recording Service
+After=syslog.target
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/zero-action/code/action-recorder.py
+Restart=on-abort
+[Install]
+WantedBy=multi-user.target
