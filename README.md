@@ -13,7 +13,7 @@ Therefore, I thought build you with open source your own action cam! :-)
 
 ## Sofware
 Running on the pi direct:
-`cd code`
+`cd app`
 
 `python3 action-recoder.py`
 

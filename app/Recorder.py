@@ -24,6 +24,7 @@ class Recorder(object):
         """ Return max possible video lenght in seconds based on resolution
         """
        import logging
+       
        logging.info("There are " + str(self.FreeSpace_Mb) + " mb free space in " + self.RecordingPath + " .")
 
        kb_per_sec = (self.Width * self.Height * self.Bitrate) / (8 * 1024)

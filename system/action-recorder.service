@@ -5,7 +5,7 @@ After=syslog.target
 Type=simple
 WorkingDirectory=/home/pi/
 User=pi
-ExecStart=/usr/bin/python3 /home/pi/zero-action/code/action-recorder.py
+ExecStart=/usr/bin/python3 /home/pi/zero-action/app/action-recorder.py
 Restart=on-abort
 [Install]
 WantedBy=multi-user.target
