@@ -4,9 +4,8 @@ Self made ultra thin open source action camera based on Raspberry Pi Zero W
 ## Use cases
 
 ### Cycling dash camera
-What a nice tour! Arg. Didn't shot a picture of the beatiful hill spot
-Action / Dash cameras are often expensive and need special accessoires
-Therefore, build your own open source action cam! :)
+What a beautiful tour! Oh damn, forgot to take a picture of the beautiful view at the top of the hill. The problem could be solved with an action cam.
+Action / Dash cameras are often expensive and need special accessoires. Therefore, build your own open source action cam with zero-action! :)
 
 ### Pet observation camera
 Stay tuned - still wip!
@@ -18,8 +17,9 @@ Stay tuned - still wip!
 
 
 ## Hardware
+### List of required components
 ### Ant+ Sensor integration
-Stay tunen - in developement.
+Stay tuned - in developement.
 
 ## Sofware
 Running on the pi direct:
