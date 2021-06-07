@@ -39,7 +39,7 @@ I built my zero-action with the following component list. So that the Pi with it
 | <img src="https://user-images.githubusercontent.com/4592657/121082440-62d93000-c7de-11eb-995a-424fb5594476.png" width="200">| Black adhesive foil | [Idealo](https://www.idealo.de/preisvergleich/Typ/4007386039903.html) | ~ 6 Euro
 
 ### Ant+ Sensor integration
-Stay tuned - in developement.
+Stay tuned - in development.
 
 ## Software
 ### Quickstart
