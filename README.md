@@ -12,6 +12,9 @@ Stay tuned - still wip!
 
 
 ## Snapshots
+![IMG_2141](https://user-images.githubusercontent.com/4592657/121076572-dc6d2000-c7d6-11eb-97b0-6de671b8c414.jpg)
+![IMG_2140](https://user-images.githubusercontent.com/4592657/121076586-e000a700-c7d6-11eb-80fd-3c936eff47eb.jpg)
+
 ![Bildschirmfoto 2021-05-23 um 16 31 44](https://user-images.githubusercontent.com/4592657/119264762-b21b4000-bbe4-11eb-94a1-d962716af62d.png)
 
 
